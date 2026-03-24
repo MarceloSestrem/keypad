@@ -1,3 +1,4 @@
+//% color="#369ddd"  icon="\uf1b9" block="Teclado"
 namespace keypad4x4 {
 
     let rows: DigitalPin[] = []
