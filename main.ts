@@ -15,8 +15,8 @@ namespace keypad4x4 {
 
     //% block="iniciar keypad linhas %r1 %r2 %r3 %r4 colunas %c1 %c2 %c3 %c4"
     export function init(
-        r1: DigitalPin, r2: DigitalPin, r3: DigitalPin, r4: DigitalPin,
-        c1: DigitalPin, c2: DigitalPin, c3: DigitalPin, c4: DigitalPin
+        r1: DigitalPin.P0, r2: DigitalPin.P1, r3: DigitalPin.P2, r4: DigitalPin.P8,
+        c1: DigitalPin.P12, c2: DigitalPin.P13, c3: DigitalPin.P14, c4: DigitalPin.P15
     ): void {
 
         rows = [r1, r2, r3, r4]
