@@ -117,7 +117,7 @@ namespace keypad4x4 {
 
     // iniciar com função de saída
     //% block="função de saída"
-    export function iniciar(saida: (t: string) => void) {
+    export function iniciar(saida: (t: string) => void): boolean {
         texto = ""
         handler = saida
 
@@ -143,7 +143,7 @@ namespace keypad4x4 {
 
     // limpar manualmente
     //% block="limpar manualmente"
-    export function limpar() {
+    export function limpar(): boolean {
         texto = ""
         if (handler) {
             handler(texto)
