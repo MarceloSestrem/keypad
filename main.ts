@@ -116,6 +116,7 @@ namespace keypad4x4 {
     let handler: (t: string) => void = null
 
     // iniciar com função de saída
+    //% block="função de saída"
     export function iniciar(saida: (t: string) => void) {
         texto = ""
         handler = saida
@@ -141,6 +142,7 @@ namespace keypad4x4 {
     }
 
     // limpar manualmente
+    //% block="limpar manualmente"
     export function limpar() {
         texto = ""
         if (handler) {
@@ -149,6 +151,7 @@ namespace keypad4x4 {
     }
 
     // obter valor digitado
+    //% block="valor digitado"
     export function valor(): string {
         return texto
     }
